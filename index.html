@@ -8,10 +8,59 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <!-- BODY CONTAINER -->
+    <div class="container">
+
+        <!-- HEADER-JUMBOTRON-->
+        <div class="jumbotron">
+            <h1 class="display-3 text-center">Crystal Collector</h1>
+            <p class="lead text-center">Can you win?</p>
+            <hr class="my-2">
+        </div>
+
+        <!-- GAME INSTRUCTIONS -->
+        <div class="instructionsList">
+            <h3 class="insructionHeading text-center">Game Instructions</h3>
+            <hr class="my-2">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+
+        <!-- RANDOM NUMBER & CRYSTAL BUTTONS -->
+        <div class="row text-center" id="ranNumDiv">
+            <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 id="randomNumber">0</h1>
+            </div>
+        </div>
+
+        <div class="row crystals text-center">
+            <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">img</div>
+            <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">img</div>
+            <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">img</div>
+            <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">img</div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                <h3 id="scoreText">Your Current Score:</h3>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                <h1 id="userScore">0</h1>
+            </div>
+        </div>
+
+
+    </div>
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->

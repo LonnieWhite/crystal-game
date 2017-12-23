@@ -1,5 +1,9 @@
-    #ranNumDiv {}
-
-.instructionsList {
-    .crystals {}
-    #userScore {}
+            .div {
+            margin-bottom: 6em;
+        }
+        
+        #ranNumDiv {}
+        
+        .instructionsList {
+            .crystals {}
+            #userScore {}

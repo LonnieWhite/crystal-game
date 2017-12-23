@@ -17,8 +17,8 @@
 
         <!-- HEADER-JUMBOTRON-->
         <div class="jumbotron">
-            <h1 class="display-3 text-center">Crystal Collector</h1>
-            <p class="lead text-center">Can you win?</p>
+            <h1 class="display-3 text-center">Bar Tender</h1>
+            <p class="lead text-center">Don't drink too much or you'll get thrown out of the bar!</p>
             <hr class="my-2">
         </div>
 
@@ -27,46 +27,68 @@
             <h3 class="insructionHeading text-center">Game Instructions</h3>
             <hr class="my-2">
             <p>You will be given a random number at the start of the game.</p>
-            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>There are four alcoholic beverages below. By clicking on a drink you will add a specific amount of points to your total score.</p>
             <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            <p>The value of each drink is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each drink.</p>
         </div>
 
         <!-- RANDOM NUMBER & CRYSTAL BUTTONS -->
-        <div class="row text-center" id="ranNumDiv">
-            <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
-                <h1 id="randomNumber">0</h1>
+        <div class="div">
+            <div class="row text-center" id="ranNumDiv">
+                <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                    <h1 id="randomNumber">0</h1>
+                </div>
+            </div>
+
+            <div class="row crystals text-center">
+                <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">
+                    <a href="https://placeholder.com"><img src="assets/images/beer.png"></a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">
+                    <a href="https://placeholder.com"><img src="assets/images/wine.png"></a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">
+                    <a href="https://placeholder.com"><img src="assets/images/cocktail.png"></a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">
+                    <a href="https://placeholder.com"><img src="assets/images/longislandtea.png"></a>
+                </div>
             </div>
         </div>
+        <div class="div">
+            <div class="row text-center">
+                <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                    <h3 id="scoreText">Your Current Score:</h3>
+                </div>
+            </div>
 
-        <div class="row crystals text-center">
-            <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">img</div>
-            <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">img</div>
-            <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">img</div>
-            <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">img</div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
-                <h3 id="scoreText">Your Current Score:</h3>
+            <div class="row text-center">
+                <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                    <h1 id="userScore">0</h1>
+                </div>
             </div>
         </div>
+        <div class="div">
+            <div class="row text-center">
+                <div class="col-xs-6 col-md- col-lg-6 col-xl-6">
+                    <h3>Wins: <span id="wins">0</span>
+                        <h3>
+                </div>
 
-        <div class="row text-center">
-            <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12">
-                <h1 id="userScore">0</h1>
+                <div class="col-xs-6 col-md-6 col-lg-6 col-xl-6">
+                    <h3>Losses: <span id="losses">0</span>
+                        <h3 </div>
+                </div>
             </div>
+
         </div>
 
 
-    </div>
-
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 
 </html>
